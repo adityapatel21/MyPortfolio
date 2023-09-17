@@ -1,0 +1,36 @@
+.button-solid {
+  display: inline-block;
+  cursor: pointer;
+
+  font-family: "Montserrat", sans-serif;
+  /* font-size: 1.2rem; */
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  text-align: center;
+  /* align-items: center; */
+
+  margin: 10px;
+  margin-left: 0px;
+  margin-right: 20px;
+  padding: 15px 25px;
+  /* flex: 0; */
+  width: fit-content;
+
+  transition: 0.3s;
+  background-size: 200% auto;
+
+  color: #f9f9f9;
+  border-radius: 3px;
+  background-image: linear-gradient(
+    to right,
+    #141e30 0%,
+    #243b55 51%,
+    #141e30 100%
+  );
+}
+
+.button-solid:hover {
+  background-position: right center; /* change the direction of the change here */
+  transform: translateY(-2px);
+}

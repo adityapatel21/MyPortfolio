@@ -1,0 +1,27 @@
+.project-body {
+  width: 100%;
+  background-color: #f4fbff;
+}
+.project-container {
+  padding: 50px 0px;
+  width: 80%;
+  margin: auto;
+}
+
+.project-container .project-heading h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #272829;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0px;
+  padding: 35px 0px 20px 0px;
+}
+
+.project-container .project-heading .project-heading-underline {
+  width: 2%;
+  height: 5px;
+  border-radius: 15px;
+  margin: auto;
+  background-color: #053b50;
+  margin-bottom: 50px;
+}

@@ -1,0 +1,73 @@
+.project-item-container {
+  padding: 25px 0px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  column-gap: 100px;
+  align-items: center;
+}
+.project-item-container .project-item-image .project-image {
+  object-fit: cover;
+  width: 100%;
+  display: block;
+}
+.project-item-container .project-text-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-item-container .project-text-description h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.project-item-container .project-text-description p {
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  line-height: 35px;
+  text-align: justify;
+}
+.project-item-container .project-text-description .techstack-item {
+  display: inline-block;
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
+  background-color: #ceeaed;
+  margin: 10px 0px;
+  margin-left: 0px;
+  margin-right: 10px;
+  border-radius: 3px;
+  padding: 7px 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.project-item-container .project-text-description .project-item-buttons {
+  display: flex;
+}
+
+@media (max-width: 998px) {
+  .project-item-container {
+    padding: 25px 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 0px;
+  }
+  .project-item-container .project-text-description h2 {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .project-item-container .project-text-description .project-item-buttons {
+    display: flex;
+    margin: 10px auto;
+  }
+}
+
+/* @media (max-width: 998px) {}*/
+
+@media (max-width: 768px) {
+  .project-item-container .project-text-description .project-item-buttons {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,96 @@
+.home-intro-body {
+  width: 100%;
+  height: 700px;
+
+  background-color: #f4f4f4;
+  background: linear-gradient(135deg, #f4fbff55 25%, transparent 25%) -100px 0/
+      200px 200px,
+    linear-gradient(225deg, #f4fbff 25%, transparent 25%) -100px 0/ 200px 200px,
+    linear-gradient(315deg, #f4fbff55 25%, transparent 25%) 0px 0/ 200px 200px,
+    linear-gradient(45deg, #f4fbff 25%, #ffffff 25%) 0px 0/ 200px 200px;
+}
+
+.home-intro-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 60%;
+  margin: 0px auto;
+  padding-top: 250px;
+  padding-bottom: 50px;
+  top: 100px;
+}
+
+.home-intro-container .home-intro-name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: center;
+  color: #053b50;
+}
+
+/* HOME INTRO TEXT STYLING */
+.home-intro-container .home-intro-about {
+  margin: 3.5rem 0px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 50px;
+  color: #272829;
+}
+
+.home-intro-container .home-intro-about .home-intro-about-monospace {
+  font-family: "Ubuntu Mono", monospace;
+  cursor: pointer;
+}
+
+.home-intro-container .home-intro-about .home-intro-about-monospace:hover {
+  font-family: "Ubuntu Mono", monospace;
+  color: #053b50;
+}
+
+.home-intro-container .home-intro-about .home-intro-about-interactive {
+  font-family: "Sacramento", cursive;
+  font-size: 2.5rem;
+  font-weight: 400;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.home-intro-container .home-intro-about .home-intro-about-interactive:hover {
+  font-weight: 500;
+  font-size: 2.5rem;
+  color: orange;
+  text-shadow: 0 0 5px #00ffca;
+}
+
+/* BREAKDOWNPOINTS */
+
+@media (max-width: 998px) {
+  .home-intro-body {
+    width: 100%;
+    height: 650px;
+  }
+  .home-intro-container {
+    width: 80%;
+    padding-top: 150px;
+  }
+  .home-intro-container .home-intro-about .home-intro-about-interactive {
+    color: orange;
+    text-shadow: 0 0 5px #00ffca;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-intro-body {
+    width: 100%;
+    height: 700px;
+  }
+  .home-intro-container {
+    width: 90%;
+    padding-top: 150px;
+  }
+}

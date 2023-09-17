@@ -1,0 +1,248 @@
+header {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  padding: 1rem 6.5%;
+  width: 100%;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+
+header .logo {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 1.2rem;
+  color: #053b50;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#check {
+  display: none;
+}
+
+header .nav-icons {
+  position: absolute;
+  right: 5%;
+  font-size: 2rem;
+  color: #272829;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar a {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.15rem;
+  color: #272829;
+  font-weight: 500;
+  margin-left: 3rem;
+  /* margin-bottom: 1.2rem; */
+  transition: 0.2s ease-in-out;
+}
+
+.navbar a:hover {
+  color: #053b50;
+  background-color: #efefef;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.navbar a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #053b50;
+  border-radius: 2px;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  transition: width 0.2s;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+.logo {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 3rem;
+  width: 3rem;
+  margin-right: 1.5rem;
+  border-radius: 3rem;
+}
+
+/* BREAKING POINTS */
+
+@media (max-width: 998px) {
+  header {
+    padding: 1.5rem 4%;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 1.2rem 4%;
+  }
+
+  header .nav-icons {
+    display: inline-flex;
+  }
+
+  #disable-button {
+    display: none;
+  }
+
+  header .logo {
+    font-size: 1.2rem;
+  }
+
+  .logo img {
+    height: 2rem;
+    width: 2rem;
+    margin-right: 1rem;
+    border-radius: 2rem;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    width: 40%;
+    height: 0;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+    overflow: hidden;
+    transition: 0.3s ease;
+  }
+
+  #check:checked ~ .navbar {
+    height: 12rem;
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    margin-right: 8rem;
+    text-align: right;
+  }
+}
+
+/* NAV LOGO .nav-logo {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-size: 1.5em;
+  color: #14274e;
+}
+.logo-name:hover {
+  color: #316b83;
+} */
+
+/* *********************** */
+
+/* Main Navigation bar */
+/* nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #f9f9f9;
+  padding: 20px 130px;
+  height: fit-content;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  padding: 20px 130px;
+  height: 25px;
+} */
+
+/* #navbar-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+/* a {
+  text-decoration: none;
+} */
+
+/* #navbar-links li {
+  list-style: none;
+  padding: 0 30px;
+  position: relative;
+}
+
+#navbar-links li a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #333333;
+  transition: 0.2s ease-in-out;
+}
+#navbar-links li a:hover {
+  color: #316b83;
+}
+
+#navbar-links li a:hover::after {
+  content: "";
+  width: 30%;
+  height: 2.2px;
+  background-color: #333333;
+  position: absolute;
+  bottom: -4px;
+  left: 30px;
+}
+
+#mobile {
+  display: none;
+} */
+
+/* @media screen and (max-width: 1100px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; */
+/* height: 20px; */
+/* font-size: 1em;
+    padding: 20px 50px;
+    margin: 0;
+    background-color: #f9f9f9;
+  }
+  #navbar-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    z-index: 999;
+    top: 49px;
+    padding-left: 0px;
+    right: -300px;
+    width: 150px;
+    height: 100vh;
+    margin: 0;
+    transition: 0.3s ease-in-out;
+  }
+  #navbar-links.active {
+    right: 0;
+  }
+  #navbar-links li {
+    margin: 15px;
+  }
+  #mobile {
+    display: block;
+  }
+  i {
+    font-size: 24px;
+    cursor: pointer;
+  }
+} */

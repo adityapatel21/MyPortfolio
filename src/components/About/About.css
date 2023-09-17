@@ -1,0 +1,109 @@
+.about-body {
+  width: 100%;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.about-container {
+  margin: auto;
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.about-container .about-heading h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #272829;
+  font-size: 2rem;
+  text-align: center;
+  margin: 35px 0px 20px 0px;
+}
+
+.about-container .about-heading .about-heading-underline {
+  width: 2%;
+  height: 5px;
+  border-radius: 15px;
+  margin: auto;
+  background-color: #053b50;
+}
+
+.about-container .about-text {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.about-container .about-text h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  color: #394867;
+  margin-bottom: 10px;
+}
+.about-container .about-text .about-text-info {
+  margin: 50px;
+  flex: 1;
+}
+.about-container .about-text .about-text-info p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 30px;
+  word-spacing: 2px;
+  text-align: justify;
+}
+
+.about-container .about-text .about-text-info p a {
+  color: #64ccc5;
+  font-weight: 600;
+}
+
+.about-container .about-text .about-text-skill {
+  margin: 50px;
+  flex: 1;
+}
+
+.about-container .about-text .about-text-skill .about-skill-button {
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
+  background-color: #a1ccd1;
+  margin: 10px 0px;
+  margin-left: 0px;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
+.about-container
+  .about-text
+  .about-text-skill
+  .about-skill-button
+  .about-skill-button-text {
+  padding: 10px 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+/* BREAK POINTS */
+@media (max-width: 998px) {
+  .about-container .about-text {
+    grid-template-columns: 1fr;
+  }
+  .about-container .about-text .about-text-skill {
+    margin: 50px;
+    margin-top: 25px;
+    flex: 1;
+  }
+}
+@media (max-width: 768px) {
+  .about-container .about-text .about-text-info {
+    margin: 25px;
+    flex: 1;
+  }
+  .about-container .about-text .about-text-skill {
+    margin: 20px;
+    flex: 1;
+  }
+}
